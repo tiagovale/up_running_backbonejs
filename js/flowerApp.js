@@ -20,9 +20,26 @@ var heirloomRoses = new app.singleFlower({
   link: "heirloomRose"
 });
 
+var tantalizingTulips = new app.singleFlower({
+  name: "Tantalizing Tulips",
+  color:'green',
+  price: 30.10,
+  img: "images/heirloomRoses.jpg",
+  link: "tantalizingTulips"
 
-var  flowerGroup = new app.FlowersCollection([redRoses,rainbowRoses]);
+});
 
-flowerGroup.add(heirloomRoses);
-flowerGroup.remove(redRoses);
+var fleurDeLis = new app.singleFlower({
+  name: "Fleur-De=Lis",
+  color:'purple',
+  price: 12.67,
+  img: "images/heirloomRoses.jpg",
+  link: "fleurDeLis"
+
+});
+
+
+var flowerGroup = new app.FlowersCollection([redRoses,rainbowRoses,heirloomRoses]);
+
+
 console.log(flowerGroup.toJSON());
