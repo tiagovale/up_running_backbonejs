@@ -7,7 +7,8 @@ app.allFlowersView = Backbone.View.extend({
  	
  	this.collection.each(this.addFlower,this);
  	return this;
- }
+ },
+ 
 addFlower: function(flower){
 var flowerView = new app.singleFlowerView({model:flower});
 this.$el.append(flowerView.render().el);
